@@ -1,12 +1,109 @@
+
 <!doctype html>
-<html>
+<html class="no-js">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Geneh.GitHub.io</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translit</title>
+    <link rel="stylesheet" href="assets/css/app.css">
   </head>
-  <body>
-     <h3>This is a test!</h3>
-  </body>
+<body>
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+      <br>
+      <!-- <h2 class="text-center header">Translit</h2> -->
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x">
+    <div class="large-8 medium-8 cell">
+      <div class="grid-x grid-padding-x">
+        <div class="small-10 cell">
+          <div class="switch">
+            <input class="switch-input" id="switch" type="checkbox" checked="checked">
+            <label class="switch-paddle" for="switch">
+              <span class="show-for-sr">Enable translit</span>
+              <span class="switch-active" aria-hidden="true">On</span>
+              <span class="switch-inactive" aria-hidden="true">Off</span>
+            </label>
+          </div>
+        </div>
+        <div class="small-2 cell">
+          <button id="copy-all" class="button tiny" title="Copy all"><img src="assets/img/copyall.png" width="20px"></button>
+          &nbsp;
+          <button id="translate" class="button tiny" title="Translate"><img src="assets/img/translate.png" width="25px"></button>
+        </div>
+      </div>
+    </div>
+    <div class="large-4 medium-4 cell">
+      <select id="languages">
+        <option value="">Language...</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x">
+    <div class="cell">
+      <textarea id="txtArea" rows="12"></textarea>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x">
+    <div class="cell">
+      <div id="keyboard" class="callout">
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x">
+    <div class="cell">
+      <ul class="accordion" data-accordion data-allow-all-closed="true">
+        <li class="accordion-item is-active" data-accordion-item>
+          <a href="#" class="accordion-title">Thank you for your support!</a>
+          <div class="accordion-content" data-tab-content>
+            <div class="grid-x grid-padding-x">
+              <div class="large-6 medium-6 cell">
+                <p>
+                  <small>Try secure, fast & private <a href="#"><img src="assets/img/brave.png" width="30px">Brave</a> web browser where you can earn cryptocurrency. You can also tip us in Brave.</small>
+                </p>
+                <!-- <ul class="list">
+                  <li><small>Simple</small></li>
+                  <li><small>No cookies</small></li>
+                  <li><small>No tracking</small></li>
+                  <li><small>Privacy</small></li>
+                </ul> -->
+              </div>
+              <div class="large-6 medium-6 cell">
+                <small>
+                  Please consider donating to keep this website running:
+                  <br>TODO: Buy me a coffee
+                  <br>BTC: 18FEwCcU6L7XV9HBNXMoURLF6eFg16PRFi
+                  <br>ETH: 0x56cB51eed9B997361FA362740E6A45258b98Ae59
+                  <br>LTC: LhmufAY69HZa36RvDz88CgVPpLo9d3WuGr
+                </small>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Contact</a>
+          <div class="accordion-content" data-tab-content>
+            <div class="grid-x grid-padding-x">
+              <div class="large-6 medium-6 cell">
+                TODO: image with email
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <p>© 2020<span id="copyright-year"></span> TODO</p>
+</div>
+
+
+<script src="assets/js/app.js"></script>
+</body>
 </html>
