@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: mytranslit.com
+Token: b9eb20977a39e4a578811cc116064fc6cb11dceef139e16e3ab479d8accef45a
